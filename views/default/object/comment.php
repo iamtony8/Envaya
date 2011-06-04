@@ -39,6 +39,7 @@ if ($entity->is_enabled())
         if ($entity->can_edit()) 
         {
             echo "<span class='admin_links'>";
+	    echo "<a href=\"edit.html\">Edit</a>  "; 
             echo view('input/post_link', array(
                 'href' => "/pg/delete_comment?comment={$entity->guid}",
                 'text' => __('delete'),
